@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { Global, css } from '@emotion/core';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +18,7 @@ ReactDOM.render(
           margin: 0;
           min-height: 100%;
           background-color: #fff;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+          font-family: 'Poppins', Black 900 italic;
           font-size: 14px;
           line-height: 20px;
           color: #333;
@@ -30,7 +31,7 @@ ReactDOM.render(
         h1,
         h2 {
           margin-top: 0;
-          font-weight: 600;
+
           letter-spacing: 1px;
           margin-bottom: 15px;
           line-height: 1.1;

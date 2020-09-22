@@ -4,6 +4,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { jsx, css } from '@emotion/core';
+import './index.css';
 
 import learn from './images/learn.png';
 
@@ -26,6 +27,25 @@ const headerInnerStyles = css`
   display: flex;
   justify-content: space-between;
   background-color: #13b0ff;
+`;
+
+const buttonStyleLeft = css`
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+`;
+const buttonStyleRight = css`
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 `;
 const sectionStyle = css`
   > div {
@@ -59,7 +79,12 @@ span {
   h1 {
     text-align: center;
     color: white;
-    font-size: 60px;
+    font-size: 76px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    line-height: 1,1;
+
 
   }
   img {
@@ -71,6 +96,7 @@ span {
     text-align: center;
     color: white;
     font-size: 25px;
+
   }
 `;
 
@@ -194,8 +220,8 @@ function App() {
     <>
       <header css={headerStyles}>
         <div css={headerInnerStyles}>
-          <button>brainfood</button>
-          <button>Get early access</button>
+          <button css={buttonStyleLeft}>brainfood</button>
+          <button css={buttonStyleRight}>Get early access</button>
         </div>
       </header>
 
@@ -204,7 +230,9 @@ function App() {
           <div>
             <span>
               <h1>
-                Delightfully animated,<br></br> bite-sized knowledge
+                <strong>
+                  Delightfully animated,<br></br> bite-sized knowledge
+                </strong>
               </h1>
               <br></br>
               <a href="#a">
