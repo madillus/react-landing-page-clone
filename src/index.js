@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { Global, css } from '@emotion/core';
 import './index.css';
+import 'typeface-poppins';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,11 +16,12 @@ ReactDOM.render(
           box-sizing: border-box;
         }
         body {
+          position: absolute;
           margin: 0;
-          min-height: 100%;
+          max-width: 100%;
           background-color: #fff;
-          font-family: 'Poppins', Black 900 italic;
-          font-size: 14px;
+          font-family: poppins;
+          font-size: 26px;
           line-height: 20px;
           color: #333;
         }
@@ -31,7 +33,6 @@ ReactDOM.render(
         h1,
         h2 {
           margin-top: 0;
-
           letter-spacing: 1px;
           margin-bottom: 15px;
           line-height: 1.1;
