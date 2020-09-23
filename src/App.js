@@ -8,6 +8,9 @@ import './index.css';
 
 import learn from './images/learn.png';
 import viking from './images/viking.jpg';
+import instagram from './images/instagram.svg';
+import facebook from './images/facebook.svg';
+import twitter from './images/twitter.svg';
 
 const centeredContainerStyles = css`
   max-width: 100%;
@@ -43,7 +46,6 @@ const buttonStyleLeft = css`
   font-weight: 700;
 `;
 const buttonStyleRight = css`
-
   border-radius: 40px;
   left: auto;
   bottom: auto;
@@ -60,8 +62,6 @@ const buttonStyleRight = css`
   margin-top: 15px;
   margin-right: 50px;
   background-color: #fff;
-
-}
 `;
 
 const buttonStyleBottom = css`
@@ -166,7 +166,7 @@ span {
     font-weight: 700;
     text-align: center;
     vertical-align: bottom;
-  }
+
 `;
 
 const secondSectionStyle = css`
@@ -284,7 +284,7 @@ margin-left: 0px;
     color: #004568;
     font-size: 22px;
     font-weight: 400;
-  }
+
 `;
 
 const fourthSectionStyle = css`
@@ -343,7 +343,6 @@ span {
     justify-content: center;
     margin-left:600px;
 
-  }
 `;
 
 const footerSectionStyle = css`
@@ -353,7 +352,8 @@ const footerSectionStyle = css`
     background-color: #13b0ff;
     color: #fff;
     height: 250px;
-    justify-content: center;
+    align-items: flex-start;
+
     padding: 10px;
   }
 
@@ -362,13 +362,13 @@ const footerSectionStyle = css`
     font-size: 30px;
     line-height: 20px;
     text-decoration: none;
-    padding: 10px;
-    margin-left: 20px;
+    padding: 20px;
+    margin-left: 500px;
     font-weight: 500;
   }
   h3 {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 20px;
     text-decoration: none;
     margin-left: 100px;
@@ -378,14 +378,26 @@ const footerSectionStyle = css`
 
   h4 {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 20px;
     text-decoration: none;
-    margin-left: 80px;
+    margin-left: 70px;
     padding: 10px;
     font-weight: 500;
   }
 
+  #social {
+    margin-top: -30px;
+    margin-left: 70px;
+    width: 160px;
+    height: 160px;
+  }
+
+  img {
+    float: left;
+    width: 33%;
+    padding: 10px;
+  }
   p {
     font-size: 18px;
     text-decoration: none;
@@ -482,9 +494,7 @@ function App() {
             <h3>
               Company{' '}
               <p>
-                <a id="a1" href="#a">
-                  Contact Us
-                </a>
+                <a href="#a">Contact Us</a>
                 <br></br>
                 <a href="#a">Jobs</a>
                 <br></br>
@@ -493,22 +503,19 @@ function App() {
             </h3>
           </div>
           <div>
-            <h4>
-              Follow us
-              <p>
-                <a href="#a">
-                  <img alt="Instagram" />
-                </a>
-                <br></br>
-                <a href="#a">
-                  <img alt="Twitter" />
-                </a>
-                <br></br>
-                <a href="#a">
-                  <img alt="Facebook" />
-                </a>
-              </p>
-            </h4>
+            <h4>Follow us</h4>
+
+            <div id="social">
+              <a href="#a">
+                <img src={instagram} alt="instagram" />
+              </a>
+              <a href="#a">
+                <img src={twitter} alt="twitter" />
+              </a>
+              <a href="#a">
+                <img src={facebook} alt="facebook" />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
