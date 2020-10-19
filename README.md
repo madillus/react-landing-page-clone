@@ -5,8 +5,10 @@ madillus/react-landing-page-clone.git
 peaceful-montalcini-70a97f.netlify.app
 codesandbox.io/s/nervous-paper-8zy3x
 
+![Image of Landing page](https://i.imgur.com/4b52VA2.png)
 
 
+![Image of Landing page](https://i.imgur.com/uMNj7GA.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
