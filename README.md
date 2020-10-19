@@ -1,3 +1,13 @@
+A simple project to understand CSS by copying a landing page
+
+
+madillus/react-landing-page-clone.git
+peaceful-montalcini-70a97f.netlify.app
+codesandbox.io/s/nervous-paper-8zy3x
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
